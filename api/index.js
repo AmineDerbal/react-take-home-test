@@ -1,6 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
+app.use(
+  cors({
+    origin: 'http://localhost:3000',
+    methods: 'GET',
+  }),
+);
 
 const port = process.env.PORT || 8080;
 app.listen(port);
@@ -73,8 +80,9 @@ const generateBallotData = () => ({
       id: 'best-actor',
       items: [
         {
-          title: 'Chadwick Boseman for Ma Rainey\'s Black Bottom',
-          photoUrL: 'https://variety.com/wp-content/uploads/2020/12/ma_raineys_black_bottom_ver2.jpg',
+          title: "Chadwick Boseman for Ma Rainey's Black Bottom",
+          photoUrL:
+            'https://variety.com/wp-content/uploads/2020/12/ma_raineys_black_bottom_ver2.jpg',
           id: 'chadwick-boseman',
         },
         {
@@ -119,7 +127,7 @@ const generateBallotData = () => ({
           id: 'carey-mulligan',
         },
         {
-          title: 'Viola Davis for Ma Rainey\'s Black Bottom',
+          title: "Viola Davis for Ma Rainey's Black Bottom",
           photoUrL: 'https://variety.com/wp-content/uploads/2020/12/ma_raineys_black_bottom.jpg',
           id: 'viola-davis',
         },
@@ -136,7 +144,8 @@ const generateBallotData = () => ({
       items: [
         {
           title: 'Daniel Kaluuya for Judas and the Black Messiah',
-          photoUrL: 'https://variety.com/wp-content/uploads/2020/12/judas_and_the_black_messiah.jpg',
+          photoUrL:
+            'https://variety.com/wp-content/uploads/2020/12/judas_and_the_black_messiah.jpg',
           id: 'daniel-kaluuya',
         },
         {
@@ -208,7 +217,8 @@ const generateBallotData = () => ({
         },
         {
           title: 'Wonder Woman 1984',
-          photoUrL: 'https://variety.com/wp-content/uploads/2020/12/wonder_woman_nineteen_eighty_four_ver18.jpg',
+          photoUrL:
+            'https://variety.com/wp-content/uploads/2020/12/wonder_woman_nineteen_eighty_four_ver18.jpg',
           id: 'wonder-woman',
         },
         {

@@ -32,6 +32,7 @@
   "devDependencies": {
     "@babel/core": "7.x",
     "@babel/eslint-parser": "7.x",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-syntax-jsx": "7.x",
     "@babel/preset-react": "7.x",
     "eslint": "7.x",

@@ -35,15 +35,18 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-syntax-jsx": "7.x",
     "@babel/preset-react": "7.x",
+    "autoprefixer": "^10.4.15",
     "eslint": "7.x",
     "eslint-config-airbnb": "18.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
+    "postcss": "^8.4.28",
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",
     "stylelint-csstree-validator": "1.x",
-    "stylelint-scss": "3.x"
+    "stylelint-scss": "3.x",
+    "tailwindcss": "^3.3.3"
   }
 }

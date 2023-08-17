@@ -16,12 +16,7 @@
     "eject": "react-scripts eject",
     "backend": "nodemon ./api/index.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
